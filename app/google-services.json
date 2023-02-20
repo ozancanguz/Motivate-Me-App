@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651765566974",
+    "project_id": "motivate-me-app-9c280",
+    "storage_bucket": "motivate-me-app-9c280.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651765566974:android:d6fbb2cae5b33760af44af",
+        "android_client_info": {
+          "package_name": "com.ozancanguz.motivate_me_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651765566974-ai2fedslsihq85o1ha7h3iq4jdmmh019.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQbKYY78SSZDb1SPrEENATq8Wv6u8QFdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651765566974-ai2fedslsihq85o1ha7h3iq4jdmmh019.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

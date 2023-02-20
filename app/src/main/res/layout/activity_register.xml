@@ -21,6 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:gravity="center"
         android:text="Name"/>
 
@@ -29,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:background="@drawable/round_corners"
           android:layout_marginBottom="20dp"
         android:hint="Enter your name"/>
 
@@ -36,6 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+
+        android:textSize="20sp"
 
         android:text="E-mail"/>
 
@@ -45,13 +49,15 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginBottom="20dp"
-
+android:background="@drawable/round_corners"
         android:hint="Enter your e-mail"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="20sp"
+
         android:text="Password"/>
 
     <EditText
@@ -59,7 +65,7 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_marginBottom="20dp"
-
+android:background="@drawable/round_corners"
         android:layout_height="wrap_content"
         android:hint="Enter your password"
         android:inputType="textPassword"/>
