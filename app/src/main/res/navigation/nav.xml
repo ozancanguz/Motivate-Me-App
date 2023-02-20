@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment2"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment3"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment4"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment5"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment6"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment7"
+            app:destination="@id/motivationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaryFragment2"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motivationFragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.motivation.MotivationFragment"
+        android:label="fragment_motivation"
+        tools:layout="@layout/fragment_motivation" />
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.diary.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/action_diaryFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.ozancanguz.motivate_me_app.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.ozancanguz.motivate_me_app.ui.register.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+</navigation>
