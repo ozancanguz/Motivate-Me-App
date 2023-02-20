@@ -8,11 +8,59 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
-        android:layout_width="407dp"
-        android:layout_height="154dp"
-        android:background="#6CC6D1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/soft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/diarynav"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/diary3"
+        app:layout_constraintBottom_toTopOf="@+id/text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:text="Diary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diarynav" />
+
+    <ImageView
+        android:id="@+id/motivationalnav"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/strongmental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="61dp"
+        android:text="Motivation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivationalnav" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

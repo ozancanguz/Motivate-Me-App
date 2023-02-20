@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.data.adapter.ImageSliderAdapter
 import com.ozancanguz.motivate_me_app.databinding.FragmentHomeBinding
@@ -26,11 +27,26 @@ class HomeFragment : Fragment() {
         val view = binding.root
 
 
+        // setting up slider
         val viewPager=binding.viewPager
         val adapter = ImageSliderAdapter(listOf(R.drawable.go1, R.drawable.go2, R.drawable.go3,R.drawable.go4))
         viewPager.adapter = adapter
 
+
+        // navigation to other screen
+        nav()
+
+
         return view
+    }
+
+    private fun nav() {
+        binding.diarynav.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_diaryFragment)
+        }
+        binding.motivationalnav.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_motivationFragment)
+        }
     }
 
 
