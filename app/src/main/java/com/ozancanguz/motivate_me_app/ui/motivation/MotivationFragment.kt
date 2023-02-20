@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.motivate_me_app.R
+import com.ozancanguz.motivate_me_app.databinding.FragmentMotivationBinding
 
 
 class MotivationFragment : Fragment() {
+    private var _binding: FragmentMotivationBinding? = null
+
+    private val binding get() = _binding!!
+
 
 
     override fun onCreateView(
@@ -16,7 +21,11 @@ class MotivationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_motivation, container, false)
+          _binding = FragmentMotivationBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+        return view
+
     }
 
 
