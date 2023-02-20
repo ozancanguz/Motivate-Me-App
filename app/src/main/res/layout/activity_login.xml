@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".ui.login.LoginActivity"
-    android:layout_marginTop="250dp"
+     android:gravity="center"
     android:padding="16dp">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="50dp"
         android:src="@drawable/mylogo" />
 
     <EditText
