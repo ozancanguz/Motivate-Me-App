@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.ozancanguz.motivate_me_app.data.Repository
+import com.ozancanguz.motivate_me_app.data.repository.Repository
 import com.ozancanguz.motivate_me_app.data.models.Quote
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.databinding.FragmentDiaryBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DiaryFragment : Fragment() {
     private var _binding: FragmentDiaryBinding? = null
 

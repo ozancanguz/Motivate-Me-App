@@ -11,9 +11,10 @@ import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.data.adapter.ImageSliderAdapter
 
 import com.ozancanguz.motivate_me_app.databinding.FragmentHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.bottom_sheet_layout.*
 
-
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
 

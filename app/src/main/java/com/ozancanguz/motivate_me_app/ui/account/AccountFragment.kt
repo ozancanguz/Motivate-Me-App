@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.databinding.FragmentAccountBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class AccountFragment : Fragment() {
     private var _binding: FragmentAccountBinding? = null
 

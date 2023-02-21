@@ -1,4 +1,4 @@
-package com.ozancanguz.motivate_me_app.data
+package com.ozancanguz.motivate_me_app.data.repository
 
 import com.ozancanguz.motivate_me_app.data.remote.RemoteDataSource
 import dagger.hilt.android.scopes.ViewModelScoped

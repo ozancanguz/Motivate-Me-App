@@ -14,7 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
