@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.HomeFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_width="412dp"
+        android:layout_height="193dp"
         android:background="@drawable/soft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,9 +22,12 @@
         android:layout_height="150dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="31dp"
+        android:layout_marginEnd="59dp"
         android:layout_marginBottom="19dp"
         android:src="@drawable/diary3"
         app:layout_constraintBottom_toTopOf="@+id/text_view"
+        app:layout_constraintEnd_toStartOf="@+id/motivationalnav"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_pager" />
 
@@ -33,10 +36,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="134dp"
         android:text="Diary"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diarynav" />
 
@@ -44,7 +50,7 @@
         android:id="@+id/motivationalnav"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/strongmental"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,13 +60,50 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
         android:text="Motivation"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/motivationalnav" />
+
+    <TextView
+        android:id="@+id/feeling_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tvshape"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="How do you feel today?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/emoji_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+    <EditText
+        android:id="@+id/emoji_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tvshape"
+        android:gravity="center"
+        android:padding="16dp"
+        android:hint="Your Emoji"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feeling_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

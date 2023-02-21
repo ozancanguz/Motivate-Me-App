@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/emoji1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emo9"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emo3"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emoji3"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emo5"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saddddd"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emo7"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emo8"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/emoji8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/party"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+</LinearLayout>
