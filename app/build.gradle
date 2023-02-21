@@ -133,4 +133,7 @@ dependencies {
     implementation "androidx.preference:preference:$preferencesVersion"
     apply plugin: 'com.google.gms.google-services'
 
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+
 }
