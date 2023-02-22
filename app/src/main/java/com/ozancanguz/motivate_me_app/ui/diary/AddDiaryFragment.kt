@@ -11,8 +11,9 @@ import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.data.models.diary.Diary
 import com.ozancanguz.motivate_me_app.databinding.FragmentAddDiaryBinding
 import com.ozancanguz.motivate_me_app.viewmodel.DiaryViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class AddDiaryFragment : Fragment() {
        private var _binding: FragmentAddDiaryBinding? = null
 

@@ -9,7 +9,7 @@ import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.data.models.diary.Diary
 import kotlinx.android.synthetic.main.list_row_layout.view.*
 
-class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
+class DiaryListAdapter: RecyclerView.Adapter<DiaryListAdapter.MyViewHolder>() {
 
 
     var todolist= emptyList<Diary>()

@@ -8,7 +8,7 @@ import androidx.room.TypeConverters
 @Database(entities = [Diary::class], version = 1,
     exportSchema = false,)
 
-@TypeConverters(TypeConverter::class)
+@TypeConverters(com.ozancanguz.motivate_me_app.data.models.diary.TypeConverter::class)
 abstract class DiaryDatabase: RoomDatabase(){
     abstract fun diaryDao():DiaryDao
 }
