@@ -1,10 +1,7 @@
 package com.ozancanguz.motivate_me_app.data.models.diary
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface DiaryDao {
@@ -18,5 +15,11 @@ interface DiaryDao {
     // insert diary
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertData(diary: Diary)
+
+
+    // delete single item
+    @Delete
+    suspend fun deleteSingleItem(diary: Diary)
+
 }
 

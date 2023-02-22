@@ -16,4 +16,12 @@ class LocalDataSource@Inject constructor(private val diaryDao: DiaryDao) {
         return diaryDao.insertData(diary)
     }
 
+
+    // delete single item
+    suspend fun deleteSingleItem(diary: Diary){
+        return diaryDao.deleteSingleItem(diary)
+    }
+
+
+
 }

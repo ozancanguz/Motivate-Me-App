@@ -30,4 +30,11 @@ class DiaryViewModel@Inject constructor(private val repository: Repository,appli
             repository.local.insertData(diary)
         }
     }
+
+    // delete single item
+    fun deleteSingleItem(diary: Diary){
+        viewModelScope.launch (Dispatchers.IO){
+            repository.local.deleteSingleItem(diary)
+        }
+    }
 }
