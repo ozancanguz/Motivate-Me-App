@@ -34,6 +34,8 @@ class DiaryFragment : Fragment() {
 
     }
 
+
+
     private fun navigateToAdd() {
         binding.addbtn.setOnClickListener {
             findNavController().navigate(R.id.action_diaryFragment_to_addDiaryFragment)

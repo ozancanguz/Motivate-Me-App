@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.ozancanguz.motivate_me_app.R
+import com.ozancanguz.motivate_me_app.data.models.diary.Diary
 import com.ozancanguz.motivate_me_app.databinding.FragmentAddDiaryBinding
+import com.ozancanguz.motivate_me_app.viewmodel.DiaryViewModel
 
 
 class AddDiaryFragment : Fragment() {
@@ -14,7 +18,7 @@ class AddDiaryFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-
+    private val diaryViewModel:DiaryViewModel by viewModels()
 
 
 
@@ -29,8 +33,22 @@ class AddDiaryFragment : Fragment() {
 
 
 
+        insertToDb()
+
 
         return view
+
+    }
+
+
+    fun insertToDb(){
+        binding.addtoDb.setOnClickListener {
+            val title=binding.titleEt.text.toString()
+            val description=binding.descriptionEt.text.toString()
+            var newData= Diary(0,title,description)
+            diaryViewModel.insertData(newData)
+            findNavController().navigate(R.id.action_addDiaryFragment_to_diaryFragment)
+        }
 
     }
 

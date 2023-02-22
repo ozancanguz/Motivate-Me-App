@@ -71,5 +71,9 @@
         android:id="@+id/addDiaryFragment"
         android:name="com.ozancanguz.motivate_me_app.ui.diary.AddDiaryFragment"
         android:label="fragment_add_diary"
-        tools:layout="@layout/fragment_add_diary" />
+        tools:layout="@layout/fragment_add_diary" >
+        <action
+            android:id="@+id/action_addDiaryFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment" />
+    </fragment>
 </navigation>
