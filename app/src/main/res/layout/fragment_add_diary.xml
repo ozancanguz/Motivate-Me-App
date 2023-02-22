@@ -9,47 +9,39 @@
 
 
     <EditText
-        android:id="@+id/title_et"
-        android:layout_width="396dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="76dp"
-        android:ems="10"
-        android:background="#E5D1FA"
-        android:inputType="textPersonName"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
 
         android:id="@+id/description_et"
-        android:layout_width="375dp"
-        android:layout_height="442dp"
+        android:layout_width="363dp"
+        android:layout_height="284dp"
 
-        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:background="#E5D1FA"
+        android:ems="10"
         android:gravity="top|start"
         android:hint="What happened today ?"
         android:inputType="textMultiLine"
         android:paddingStart="24dp"
         android:paddingTop="16dp"
         android:paddingEnd="24dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/addtoDb"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_et" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addtoDb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#ED2525"
+
         android:text="ADD"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_et" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
