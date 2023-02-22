@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.databinding.FragmentDiaryBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,10 +26,18 @@ class DiaryFragment : Fragment() {
          _binding = FragmentDiaryBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        navigateToAdd()
+
 
         return view
 
 
+    }
+
+    private fun navigateToAdd() {
+        binding.addbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_diaryFragment_to_addDiaryFragment)
+        }
     }
 
 

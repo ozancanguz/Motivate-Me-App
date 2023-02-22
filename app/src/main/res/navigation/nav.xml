@@ -49,8 +49,8 @@
         android:label="fragment_diary"
         tools:layout="@layout/fragment_diary" >
         <action
-            android:id="@+id/action_diaryFragment_to_accountFragment"
-            app:destination="@id/accountFragment" />
+            android:id="@+id/action_diaryFragment_to_addDiaryFragment"
+            app:destination="@id/addDiaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountFragment"
@@ -67,4 +67,9 @@
         android:name="com.ozancanguz.motivate_me_app.ui.register.RegisterActivity"
         android:label="activity_register"
         tools:layout="@layout/activity_register" />
+    <fragment
+        android:id="@+id/addDiaryFragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.diary.AddDiaryFragment"
+        android:label="fragment_add_diary"
+        tools:layout="@layout/fragment_add_diary" />
 </navigation>
