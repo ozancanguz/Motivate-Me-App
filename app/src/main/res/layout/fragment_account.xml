@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.account.AccountFragment">
 
+    <Button
+        android:id="@+id/signOutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="0dp"
@@ -27,7 +38,7 @@
         android:layout_marginBottom="26dp"
         android:gravity="center"
         android:text="Hello"
-        android:textSize="33sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/AccountEmailTv"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +52,7 @@
         android:layout_marginBottom="221dp"
         android:gravity="center"
         android:text="Email: "
-        android:textSize="33sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
