@@ -80,4 +80,9 @@
             android:id="@+id/action_addDiaryFragment_to_diaryFragment"
             app:destination="@id/diaryFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/wheelgamefragment"
+        android:name="com.ozancanguz.motivate_me_app.ui.wheel.Wheelgamefragment"
+        android:label="Wheel Game"
+        tools:layout="@layout/fragment_wheelgamefragment" />
 </navigation>

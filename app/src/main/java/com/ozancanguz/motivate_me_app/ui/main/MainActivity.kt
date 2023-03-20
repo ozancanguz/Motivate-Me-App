@@ -34,7 +34,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.homeFragment,
                 R.id.motivationFragment,
                 R.id.diaryFragment,
-                R.id.accountFragment
+                R.id.wheelgamefragment,
+                R.id.accountFragment,
+
 
             )
         )

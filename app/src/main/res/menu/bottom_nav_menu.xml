@@ -12,8 +12,13 @@
     <item android:id="@+id/diaryFragment"
         android:title="Diary"
         android:icon="@drawable/diary2"></item>
+    <item android:id="@+id/wheelgamefragment"
+        android:title="Wheel"
+        android:icon="@drawable/wg"></item>
 
     <item android:id="@+id/accountFragment"
         android:title="Account"
         android:icon="@drawable/account"></item>
+
+
 </menu>
