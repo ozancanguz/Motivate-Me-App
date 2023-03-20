@@ -40,7 +40,7 @@ object NetworkModule {
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://zylalabs.com/api/936/motivational+phrases+api/754/")
+            .baseUrl("https://type.fit/")
             .client(okHttpClient)
             .addConverterFactory(gsonConverterFactory)
             .build()

@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.motivate_me_app.R
 import com.ozancanguz.motivate_me_app.data.models.Quote
 import com.ozancanguz.motivate_me_app.data.models.QuoteItem
+import com.ozancanguz.motivate_me_app.data.models.quote2.Quote2
+import com.ozancanguz.motivate_me_app.data.models.quote2.Quote2Item
 import kotlinx.android.synthetic.main.quote_row_layout.view.*
 
 class QuoteAdapter:RecyclerView.Adapter<QuoteAdapter.MyViewHolder>() {
@@ -15,9 +17,9 @@ class QuoteAdapter:RecyclerView.Adapter<QuoteAdapter.MyViewHolder>() {
 
     }
 
-    var quoteList= emptyList<QuoteItem>()
+    var quoteList= emptyList<Quote2Item>()
 
-    fun setData(newData:Quote){
+    fun setData(newData: Quote2){
         this.quoteList=newData
         notifyDataSetChanged()
     }
@@ -30,7 +32,7 @@ class QuoteAdapter:RecyclerView.Adapter<QuoteAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentQuote=quoteList[position]
-        holder.itemView.quoteTextView.text=currentQuote.quote
+        holder.itemView.quoteTextView.text=currentQuote.text
 
     }
 

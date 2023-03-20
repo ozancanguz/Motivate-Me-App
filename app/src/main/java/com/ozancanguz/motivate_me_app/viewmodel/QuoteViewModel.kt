@@ -7,6 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.ozancanguz.motivate_me_app.data.repository.Repository
 import com.ozancanguz.motivate_me_app.data.models.Quote
+import com.ozancanguz.motivate_me_app.data.models.quote2.Quote2
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -14,7 +15,7 @@ import javax.inject.Inject
 @HiltViewModel
 class QuoteViewModel@Inject constructor(private val repository: Repository, application: Application):AndroidViewModel(application) {
 
-    var quote=MutableLiveData<Quote>()
+    var quote=MutableLiveData<Quote2>()
 
     fun getQuote(){
         viewModelScope.launch {

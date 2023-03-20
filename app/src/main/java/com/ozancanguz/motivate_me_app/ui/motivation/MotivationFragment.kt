@@ -84,7 +84,7 @@ class MotivationFragment : Fragment() {
 
     private fun observeLiveData(){
         binding.pbmotivation.visibility=View.VISIBLE
-          quoteViewModel.getQuote()
+        quoteViewModel.getQuote()
         quoteViewModel.quote.observe(viewLifecycleOwner, Observer {
             quoteAdapter.setData(it)
             binding.pbmotivation.visibility=View.INVISIBLE
@@ -92,7 +92,7 @@ class MotivationFragment : Fragment() {
     }
 
     private fun setupRv() {
-        binding.recyclerView.layoutManager=LinearLayoutManager(requireContext())
+        binding.recyclerView.layoutManager=LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerView.adapter=quoteAdapter
     }
 

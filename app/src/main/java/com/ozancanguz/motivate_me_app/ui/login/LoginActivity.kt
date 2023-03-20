@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.registerButton.setOnClickListener {
-            startActivity(Intent(this@LoginActivity,RegisterActivity::class.java))
+            startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
 
         }
 
