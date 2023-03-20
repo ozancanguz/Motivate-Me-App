@@ -32,13 +32,22 @@ class Wheelgamefragment : Fragment() {
     private val random = Random()
 
     private val sectors = arrayOf(
-        "“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein",
-        "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
-        "When you change your thoughts, remember to also change your world.”—Norman Vincent Peale",
-        "Success usually comes to those who are too busy looking for it.” — Henry David Thoreau",
-        "Either you run the day or the day runs you.” — Jim Rohn",
-        "One man with courage makes a majority.” – Andrew Jackson",
-        "Opportunities don't happen, you create them.” — Chris Grosser"
+        "Read Every Day",
+        "Learn a New Language",
+        "Pick up a New Hobby",
+        "Create an Inspirational Room",
+        "Overcome Your Fears",
+        "Wake up Early",
+        "Have a Weekly Exercise Routine",
+        "Write a Letter to Your Future Self",
+        "Get out of Your Comfort Zone",
+        " Identify Your Blind Spots",
+        "Ask for Feedback",
+        " Stay Focused With To-Do Lists",
+        "Get Into Action",
+    "Learn From People Who Inspire You",
+        "Quit a Bad Habit",
+    "Avoid Negative People"
     )
 
     override fun onCreateView(
