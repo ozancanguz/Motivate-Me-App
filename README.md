@@ -2,6 +2,11 @@
 
 -I have developed  a fully functional motivatational app. 
 
+# Demo
+![motivation app part 1](https://user-images.githubusercontent.com/64928807/226639886-9eed9830-df1e-47b6-b5bd-954abe0bac6a.gif)
+![motivation app part 2](https://user-images.githubusercontent.com/64928807/226640170-38286e22-e00f-4371-8cad-fefda145192a.gif)
+
+
 # Architecture
 
 
