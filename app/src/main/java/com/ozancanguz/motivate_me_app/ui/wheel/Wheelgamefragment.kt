@@ -1,5 +1,6 @@
 package com.ozancanguz.motivate_me_app.ui.wheel
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -50,6 +51,8 @@ class Wheelgamefragment : Fragment() {
     "Avoid Negative People"
     )
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -63,8 +66,18 @@ class Wheelgamefragment : Fragment() {
         spinButton = binding.spinButton
         resultTextView = binding.resultTextview
 
+
+
         spinButton.setOnClickListener {
             spinWheel()
+            try {
+                val mediaPlayer = MediaPlayer.create(requireContext(), R.raw.cark)
+                mediaPlayer.start()
+            } catch (e: IllegalStateException) {
+                e.printStackTrace()
+            }
+
+
         }
 
 
