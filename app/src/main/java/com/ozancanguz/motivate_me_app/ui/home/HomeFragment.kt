@@ -49,11 +49,14 @@ class HomeFragment : Fragment() {
 
 
     private fun nav() {
-        binding.diarynav.setOnClickListener {
+        binding.diarynav2.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_diaryFragment)
         }
-        binding.motivationalnav.setOnClickListener {
+        binding.motinav2.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_motivationFragment)
+        }
+        binding.wheelnav2.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_wheelgamefragment)
         }
     }
 

@@ -18,54 +18,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/diarynav"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="19dp"
-        android:src="@drawable/diary3"
-        app:layout_constraintBottom_toTopOf="@+id/text_view"
-        app:layout_constraintEnd_toStartOf="@+id/motivationalnav"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="58dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="16dp"
-        android:text="Diary"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diarynav" />
 
-    <ImageView
-        android:id="@+id/motivationalnav"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/strongmental"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="44dp"
-        android:text="Motivation"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/motivationalnav" />
 
     <TextView
         android:id="@+id/feeling_text"
@@ -102,6 +56,75 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <ImageView
+        android:id="@+id/diarynav2"
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/diary3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <ImageView
+        android:id="@+id/motinav2"
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/strongmental"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/diarynav2"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <ImageView
+        android:id="@+id/wheelnav2"
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:src="@drawable/wheelgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="14dp"
+        android:text="Diary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diarynav2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:text="Wheel Game"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheelnav2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="179dp"
+        android:text="Motivation"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motinav2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

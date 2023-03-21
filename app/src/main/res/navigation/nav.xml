@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_homeFragment_to_diaryFragment2"
             app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wheelgamefragment"
+            app:destination="@id/wheelgamefragment" />
     </fragment>
     <fragment
         android:id="@+id/motivationFragment"
@@ -51,6 +54,9 @@
         <action
             android:id="@+id/action_diaryFragment_to_addDiaryFragment"
             app:destination="@id/addDiaryFragment" />
+        <action
+            android:id="@+id/action_diaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/accountFragment"
@@ -79,10 +85,17 @@
         <action
             android:id="@+id/action_addDiaryFragment_to_diaryFragment"
             app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_addDiaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/wheelgamefragment"
         android:name="com.ozancanguz.motivate_me_app.ui.wheel.Wheelgamefragment"
         android:label="Wheel Game"
-        tools:layout="@layout/fragment_wheelgamefragment" />
+        tools:layout="@layout/fragment_wheelgamefragment" >
+        <action
+            android:id="@+id/action_wheelgamefragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
